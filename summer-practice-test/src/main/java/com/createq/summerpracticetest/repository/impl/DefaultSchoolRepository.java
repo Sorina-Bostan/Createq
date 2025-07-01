@@ -1,4 +1,4 @@
-package com.createq.summerpracticetest.repositoryImpl;
+package com.createq.summerpracticetest.repository.impl;
 
 import com.createq.summerpracticetest.model.SchoolModel;
 import com.createq.summerpracticetest.model.StudentModel;
@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class DefaultSchoolRepository implements SchoolRepository {
     @Override
     public List<SchoolModel> getAll(){
