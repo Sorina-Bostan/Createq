@@ -1,6 +1,8 @@
-package com.createq.summerpracticetest.repository;
+package com.createq.summerpracticetest.repositoryImpl;
 
 import com.createq.summerpracticetest.model.StudentModel;
+import com.createq.summerpracticetest.repository.StudentRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
