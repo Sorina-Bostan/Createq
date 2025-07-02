@@ -1,13 +1,24 @@
 package com.createq.summerpracticetest.model;
 
+import jakarta.persistence.*;
+
 import java.util.List;
 
+
+@Entity
 public class SchoolModel {
-    private int id;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column
     private String name;
+
+    @OneToMany(mappedBy="school")
     private List<StudentModel> students;
 
-    public int getId(){
+    public Long getId(){
         return this.id;
     }
     public String getName(){
@@ -16,7 +27,7 @@ public class SchoolModel {
     public List<StudentModel> getStudents(){
         return this.students;
     }
-    public void setId(int id){
+    public void setId(Long id){
         this.id = id;
     }
     public void setName(String name){
