@@ -17,6 +17,6 @@ public class SchoolController {
     @GetMapping("schools")
     public String getAll(Model model){
         model.addAttribute("schools", schoolFacade.getAll());
-        return "";
+        return "allSchools";
     }
 }
